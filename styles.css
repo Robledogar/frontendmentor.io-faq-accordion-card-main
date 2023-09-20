@@ -55,18 +55,21 @@ body{
         align-items: center;
     }
 
-        #svgMovilSuperior{
+        .svgMovilSuperior{
 
         }
 
-        #svgMovilInferior{
+        .svgMovilInferior{
             margin-top: -70px;
             
             
         }
+        .contenedorTextos{
+            width: 100%;
+        }
 
         .contenedorTextoTitulo{
-            margin: 20px;
+            margin: 30px;
         }
 
             h1{
@@ -136,6 +139,28 @@ body{
 
             .lineaDivisoria{
                 width: 86%;
-                margin: 15px 25px;
+                margin: 16px 25px;
                 border-bottom: 2px solid rgba(0, 0, 0, 0.1); 
             }
+
+
+@media screen and (min-width: 1000px) {
+    .contenedorPrincipal{
+        width: 920px;
+        height: 510px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .contenedorTextos{
+        width: 25%;
+    }
+
+    .contenedorSVG{
+        background-color: red;
+        margin: 0;
+    }
+}
