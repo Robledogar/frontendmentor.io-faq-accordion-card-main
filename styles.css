@@ -149,14 +149,8 @@ body{
 
 
 
-/* Cambia el fondo SVG para resoluciones más pequeñas */
-@media screen and (max-width: 1000px) {
-    .contenedorSVG {
-      background-image: url('images\illustration-woman-online-mobile.svg'); /* Ruta al primer SVG */
-    }
-  }
+
   
-  /* Cambia el fondo SVG para resoluciones más grandes */
   @media screen and (min-width: 1000px) {
     .contenedorPrincipal{
         width: 920px;
@@ -166,13 +160,34 @@ body{
         gap: 10px; 
         overflow: hidden;
         
+        
     }
     .contenedorSVG {
-      background-image: url('svg2.svg'); /* Ruta al segundo SVG */
-      width: 400px;
-        margin: 50px -40px;
+        width: 400px;
+        margin: 50px 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .svgMovilInferior{
+        margin-top: -70px;
+        
+        
+        
+    }
+
+    .contenedorTextos{
+        width: 90%;
+    }
+
+    .contenedorTextoTitulo{
+        margin: 30px;
+    }
+
+    h1{
+        font-weight: 700;
+        font-size: 30px;
+        text-align: left;
     }
   }
