@@ -18,9 +18,36 @@ boton5.addEventListener('click', () => abrirRespuesta('5'));
 
                 // FUNCIONES //
 function abrirRespuesta(numeroRespuesta) {
-    
+    const pregunta = document.getElementById(`pregunta${numeroRespuesta}`);
     const respuesta = document.getElementById(`respuesta${numeroRespuesta}`);
-    respuesta.classList.toggle('respuestaInactiva');
+    const boton = document.getElementById(`boton${numeroRespuesta}`);
+
+    if(pregunta.classList.contains('textoNegrita')) {
+        pregunta.classList.toggle('textoNegrita')
+        respuesta.classList.toggle('respuestaInactiva');
+        boton.classList.toggle('imagenInvertida');
+    } else {
+        for(let i=1; i<=5; i++) {
+            const pregunta = document.getElementById(`pregunta${i}`);
+            const respuesta = document.getElementById(`respuesta${i}`);
+            const boton = document.getElementById(`boton${i}`);
+
+                
+            pregunta.classList.remove('textoNegrita')
+            respuesta.classList.add('respuestaInactiva');
+            boton.classList.remove('imagenInvertida')
+            
+        }
+
+        pregunta.classList.toggle('textoNegrita')
+        respuesta.classList.toggle('respuestaInactiva');
+        boton.classList.toggle('imagenInvertida');
+
+    }
+
+    
+
+    
 }
     
 

@@ -96,6 +96,11 @@ body{
                     font-size: 13px;
                 }
 
+                .textoNegrita{
+                    font-weight: 700;
+                    opacity: 1;
+                }
+
                 
 
                 .svgPregunta{
@@ -105,11 +110,12 @@ body{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    cursor: pointer;
-
-                    
-
+                    cursor: pointer; 
                 }
+
+                .imagenInvertida {
+                    transform: scaleY(-1); /* Invierte verticalemente la imagen */
+                  }
 
             .respuesta{
                 margin: 10px 25px;
@@ -122,9 +128,7 @@ body{
                 display: none;
             }
 
-            .respuestaActiva{
-                display: block;
-            }
+            
 
                 .parrafoRespuesta{
                     opacity: .5;
