@@ -43,12 +43,11 @@ function abrirRespuesta(numeroRespuesta) {
         respuesta.classList.toggle('respuestaInactiva');
         boton.classList.toggle('imagenInvertida');
 
-    }
-
-    
-
-    
+    }  
 }
+
+   
+
     
 
 

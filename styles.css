@@ -31,6 +31,7 @@
 
 body{
     background: linear-gradient(to bottom, var(--color-soft-violet), var(--color-soft-blue));
+    height: 100vh;
     
 }
 
@@ -53,6 +54,8 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
         .svgMovilSuperior{
@@ -144,23 +147,32 @@ body{
             }
 
 
-@media screen and (min-width: 1000px) {
+
+
+/* Cambia el fondo SVG para resoluciones más pequeñas */
+@media screen and (max-width: 1000px) {
+    .contenedorSVG {
+      background-image: url('images\illustration-woman-online-mobile.svg'); /* Ruta al primer SVG */
+    }
+  }
+  
+  /* Cambia el fondo SVG para resoluciones más grandes */
+  @media screen and (min-width: 1000px) {
     .contenedorPrincipal{
         width: 920px;
         height: 510px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px; 
+        overflow: hidden;
         
     }
-
-    .contenedorTextos{
-        width: 25%;
+    .contenedorSVG {
+      background-image: url('svg2.svg'); /* Ruta al segundo SVG */
+      width: 400px;
+        margin: 50px -40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .contenedorSVG{
-        background-color: red;
-        margin: 0;
-    }
-}
+  }
