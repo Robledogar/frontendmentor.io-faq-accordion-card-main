@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; margin-bottom: 20px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+                /* COLORS */
+:root {
+    /* Primary Text */
+    --color-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --color-soft-red: hsl(14, 88%, 65%);
+  
+    /* Primary Gradient Background */
+    --color-soft-violet: hsl(273, 75%, 66%);
+    --color-soft-blue: hsl(240, 73%, 65%);
+  
+    /* Neutral Text */
+    --color-very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --color-dark-grayish-blue: hsl(240, 6%, 50%);
+  
+    /* Neutral Dividers */
+    --color-light-grayish-blue: hsl(240, 5%, 91%);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--color-soft-violet), var(--color-soft-blue));
+    
+}
+
+  .contenedorPrincipal{
+    height: 535px;
+    width: 325px;
+    background-color: var(--color-light-grayish-blue);
+    margin: 150px auto 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+    .contenedorSVG{
+        width: 230px;
+        margin-top: -105px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        #svgMovilSuperior{
+
+        }
+
+        #svgMovilInferior{
+            margin-top: -70px;
+            
+            
+        }
+
+        .contenedorTextoTitulo{
+            margin: 20px;
+        }
+
+            h1{
+                font-weight: 700;
+                font-size: 30px;
+                text-align: center;
+            }
+
+        .contenedorPreguntas{
+            width: 100%;
+            
+            
+            
+        }
+
+            .pregunta{
+                margin: 0 0 0 28px;
+                display: flex;
+                opacity: .6;
+                /* font-weight: 700; */
+                
+
+            }
+
+                .parrafoPregunta{
+                    width: 88%;
+                    font-size: 13px;
+                }
+
+                
+
+                .svgPregunta{
+                    width: 20px;
+                    height: 20px;
+                    margin-top: -2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    
+
+                }
+
+            .respuesta{
+                margin: 10px 25px;
+                padding-right: 35px;
+                font-size: 12px;
+                display: none;
+            }
+
+                .parrafoRespuesta{
+                    opacity: .5;
+                }
+
+            .lineaDivisoria{
+                width: 86%;
+                margin: 15px 25px;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.1); 
+            }
